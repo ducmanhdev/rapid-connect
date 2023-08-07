@@ -1,0 +1,9 @@
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: transform 0.25s linear;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  transform: translateY(100%);
+}

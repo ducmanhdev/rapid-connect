@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "animation";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #2D65EF;
+  --color-primary-lighter: #EAF2FF;
+  --color-secondary: #626262;
+  --color-F2: #F2F2F2;
+  --color-CF0: #F0F3F8;
+  --color-CEF: #EFEFEF;
+  --color-CD1: #D1D1D1;
+  --color-C87: #878787;
+  --color-C82: #828282;
+  --color-CEC: #EC4545;
+  --color-CFFE: #FFE2E2;
+  --color-C27: #27AE60;
+  --color-CEFF: #EFFFE2;
+  --color-CD9: #D96425;
+  --color-CE9: #E9E9E9;
+  --color-C1F: #1FB3F2;
+  --color-C4B: #4BD7A7;
+  --color-CE6: #E6E6E6;
+  --color-error: #EB5757;
+  --color-C279: #279D3A;
+  --color-CF5: #F5F5F5;
+  --base-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cecece;
+  border-radius: 4px;
+}
+
+body {
+  background-color: var(--color-F2);
+  font-family: 'Poppins', sans-serif;
+}
+
+.h-screen {
+  height: 100vh;
+  height: calc(100 * var(--vh));
+}
+
+.min-h-screen {
+  min-height: 100vh;
+  min-height: calc(100 * var(--vh));
+}
+
+.ant-modal-header {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 10px 46px 10px 24px;
+  background-color: var(--color-F2);
+}
+
+.ant-modal-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ant-modal-close-x {
+  height: 46px;
+  width: 46px;
+  background-image: url(@/assets/images/close-mask.svg);
+  background-size: 28px 28px;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  span {
+    display: none;
+  }
+}
+
+.ant-btn {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ant-modal-content {
+  border-radius: 0.5rem;
+}
+
+.ant-modal-body {
+  padding: 1.5rem;
+}
+
+.ant-form-vertical .ant-form-item-label, .ant-col-24.ant-form-item-label, .ant-col-xl-24.ant-form-item-label {
+  padding: 0;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.ant-checkbox-inner {
+  box-shadow: 1px 1px 6px 0 #D0D2D8;
+  border-color: transparent;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--color-C4B);
+  border-color: var(--color-C4B);
+}
+
+.ant-checkbox + span {
+  padding-left: 0.75rem;
+}
+
+.ant-empty {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+input.input-primary {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: #F2F7FF;
+}
+
+input.input-error {
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+  background-color: #fefafa;
+}
+
+.ant-input-number-disabled .ant-input-number-input,
+.ant-input-disabled .ant-input-input {
+  color: #AFAFAF;
+  background: #F1F1F1;
+  border: 1px solid #E0E0E0;
+}
+
+.hide-modal-buttons {
+  .ant-modal-confirm-btns {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer utilities {
+  .disabled {
+    @apply pointer-events-none cursor-default
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg bg-white text-black p-4 shadow;
+  }
+
+  .tag {
+    @apply rounded inline-flex items-center py-1 px-3 font-medium;
+    &--error {
+      @apply text-CEC bg-CFFE
+    }
+
+    &--success {
+      @apply text-C27 bg-CEFF
+    }
+  }
+
+  .btn {
+    @apply py-1 px-2.5 bg-C1F text-white rounded font-medium;
+    &:disabled, &.disabled {
+      @apply pointer-events-none bg-CF5 text-[rgba(0,0,0,0.25)];
+    }
+  }
+}
